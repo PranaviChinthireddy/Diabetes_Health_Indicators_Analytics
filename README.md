@@ -26,21 +26,21 @@ Target Variable:
 
 These variables represent various factors that have been linked to the development of diabetes, including metabolic conditions, physical activity levels, socio-economic status, and medical history.
 
-Methodology
+Methodology:
 
-Data Preprocessing
+Data Preprocessing:
 Before applying predictive models, data preprocessing was necessary to ensure the quality and integrity of the dataset:
 Handling Missing Values: Missing data were managed using imputation techniques or removing instances depending on the nature and amount of missing data.
 Encoding Categorical Variables: Some variables in the dataset, such as `Sex,` `Smoker,` and `HeartDiseaseorAttack,` are categorical in nature. These were converted to numerical values using one-hot encoding or label encoding.
 Normalizing Continuous Variables: Variables like `BMI`, `Age`, and `Income` were normalized to bring them to a similar scale, ensuring that no single variable would disproportionately influence the model due to differing magnitudes.
 
-Exploratory Data Analysis (EDA)
+Exploratory Data Analysis (EDA):
 Exploratory Data Analysis was performed to:
 Understand the distribution of each variable and identify potential outliers.
 Visualize correlations between health indicators and diabetes status to uncover any underlying patterns.
 Identify trends in variables such as `BMI,` `Age,` and `GenHlth` that might correlate with higher diabetes prevalence.
 
-Modeling Approach
+Modeling Approach:
 Given the objective of predicting diabetes incidence based on various health factors, two modeling approaches were chosen:
 
 1. Logistic Regression:
@@ -52,14 +52,14 @@ Given the objective of predicting diabetes incidence based on various health fac
    - This model works by splitting the dataset at each node based on feature values, making it capable of capturing intricate interactions between predictors.
    - Decision trees also provide a clear, visual representation of the decision-making process, which helps in understanding which health indicators contribute most to diabetes risk.
 
-Evaluation Metrics
+Evaluation Metrics:
 To evaluate the model performance, the following metrics were used:
 - Accuracy: Proportion of correct predictions made by the model.
 - Confusion Matrix: Provides insights into true positives, false positives, true negatives, and false negatives, offering a detailed view of model performance.
 - ROC Curve and AUC: These metrics helped evaluate how well the model distinguishes between diabetes classes.
 - Precision-Recall Curve: Focuses on evaluating model performance when the dataset is imbalanced (i.e., not all classes are equally represented).
 
-Key Findings
+Key Findings:
 
 Most Predictive Health Indicators:
 Through the analysis, the following health indicators emerged as the strongest predictors of diabetes:
